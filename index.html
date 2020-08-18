@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+    <title>Matoz Todo List</title>
+  </head>
+  <body>
+    <div class="preload">
+      <img class="airplane" src="./img/airplane.png" alt="airplane" />
+      <h3>Loading~~~</h3>
+      <img class="cloud1" src="./img/cloud.png" alt="cloud1" />
+      <img class="cloud2" src="./img/cloud.png" alt="cloud2" />
+      <img class="cloud3" src="./img/cloud.png" alt="cloud3" />
+    </div>
+    <header>
+      <h1>Matoz Todo List</h1>
+    </header>
+    <form>
+      <div class="todo-input-wrapper">
+        <input
+          type="text"
+          class="todo-input"
+          id="todo-input"
+          placeholder="Emm, Let's Do Something"
+        />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list">
+        <!-- Use JS To Generate -->
+        <!-- <div class="todo">
+          <li></li>
+          <button></button>
+        </div> -->
+      </ul>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="links">
+          <a href="https://www.youtube.com/" class="yt-link">
+            <i class="fab fa-youtube"></i>
+            <p>Youtube</p>
+          </a>
+          <a href="https://www.instagram.com/" class="ins-link">
+            <i class="fab fa-instagram"></i>
+            <p>Instagram</p>
+          </a>
+          <a href="https://www.messenger.com/" class="messenger-link">
+            <i class="fab fa-facebook-messenger"></i>
+            <p>Messenger</p>
+          </a>
+          <a href="https://www.whatsapp.com/" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <p>WhatsApp</p>
+          </a>
+        </div>
+        <div class="copyright">
+          <p>©2020 by Matoz</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

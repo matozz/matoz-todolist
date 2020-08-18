@@ -1,0 +1,90 @@
+/************************************************************************************
+smaller than 850
+*************************************************************************************/
+@media screen and (max-width: 850px) {
+  form {
+    flex-direction: column;
+  }
+
+  .todo-list {
+    min-width: 86%;
+  }
+
+  .todo-container {
+    padding-bottom: 24vh;
+  }
+
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  footer .container .links {
+    max-width: 54%;
+    flex-wrap: wrap;
+  }
+}
+
+/************************************************************************************
+smaller than 700
+*************************************************************************************/
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 5.6vw;
+  }
+}
+/************************************************************************************
+smaller than 640
+*************************************************************************************/
+@media screen and (max-width: 640px) {
+  form input,
+  form button,
+  select {
+    font-size: 4.8vw;
+  }
+  .todo {
+    font-size: 5vw;
+  }
+  select {
+    width: 40vw;
+  }
+  .trash-btn,
+  .complete-btn {
+    font-size: 3vw;
+  }
+
+  .todo-container {
+    padding-bottom: 34vh;
+  }
+
+  footer .container .links {
+    max-width: 40%;
+    flex-wrap: wrap;
+  }
+}
+/************************************************************************************
+smaller than 420
+*************************************************************************************/
+@media screen and (max-width: 420px) {
+  form input,
+  form button,
+  select {
+    font-size: 4.8vw;
+  }
+  .todo {
+    font-size: 5vw;
+  }
+
+  .todo-container {
+    padding-bottom: 40vh;
+  }
+
+  select {
+    width: 40vw;
+  }
+  .trash-btn,
+  .complete-btn {
+    font-size: 3vw;
+    padding: 4vw;
+  }
+}
